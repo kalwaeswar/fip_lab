@@ -1,0 +1,13 @@
+image1=imread("catimage.jpg");
+image2=imread("dogimg.jpg");
+image1=resize(image1,size(image2));
+subplot(4,4,1),imshow(image1),title("Image1");
+subplot(4,4,2),imshow(image2),title("Image2");
+subplot(4,4,3),imshow(imadd(image1,image2)),title("add");
+subplot(4,4,4),imshow(imsubtract(image1,image2)),title("subtract");
+subplot(4,4,5),imshow(immultiply(image1,image2)),title("multiplication");
+subplot(4,4,6),imshow(imdivide(image1,image2)),title("division");
+subplot(4,4,7),imshow(bitand(image1,image2)),title("and");
+subplot(4,4,8),imshow(bitor(image1,image2)),title("or");
+subplot(4,4,9),imshow(bitxor(image1,image2)),title("xor");
+subplot(4,4,10),imshow(imcomplement(image1)),title("compliment");

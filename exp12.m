@@ -1,0 +1,13 @@
+a=imread('dogimg.jpg');
+b=imread('grey2image.jpg');
+c=resize(a,[180,320]);
+d=imcomplement(b);
+e=bitor(b,c);
+f=bitand(b,c);
+g=bitxor(b,c);
+subplot(4,2,1),imshow(b),title("img1");
+subplot(4,2,2),imshow(c),title("img2");
+subplot(4,2,3),imshow(d),title("complement");
+subplot(4,2,4),imshow(e),title("or");
+subplot(4,2,5),imshow(b),title("and");
+subplot(4,2,6),imshow(b),title("xor");
